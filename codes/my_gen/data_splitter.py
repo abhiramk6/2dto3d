@@ -15,14 +15,14 @@ for filename in os.listdir(directory_path):
 
         # Check if the folder name starts with "right"
         if filename.lower().startswith("right"):
-            right_folder_path = "/Users/abhiramkamini/Downloads/paper/dataset/train/right"
+            right_folder_path = "/dataset/train/right"
 
             # Move the file to the folder
             shutil.move(os.path.join(directory_path, filename), os.path.join(right_folder_path, filename))
 
         # Check if the folder name starts with "left"
         elif filename.lower().startswith("left"):
-            left_folder_path = '/Users/abhiramkamini/Downloads/paper/dataset/train/left'
+            left_folder_path = '/dataset/train/left'
 
             # Move the file to the folder
             shutil.move(os.path.join(directory_path, filename), os.path.join(left_folder_path, filename))

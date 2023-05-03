@@ -1,6 +1,6 @@
 import os
 
-directory_path = "/Users/abhiramkamini/Downloads/paper/dataset/valid/left"
+directory_path = "/dataset/valid/left"
 
 for filename in os.listdir(directory_path):
     if filename.startswith("left_frame_"):
